@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    
+    <title>WalterMart</title>
+</head>
+<body>
+    <video autoplay muted loop class="video-background">
+        <source src="WalterMart Supermarket.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Header -->
+<header class="d-flex justify-content-between align-items-center p-3" style="background-color: yellow;">
+    <div class="logo">
+        <img src="logo.png" alt="Philippine Airlines Logo" class="logo-img" style="max-height: 60px; width: auto;">
+    </div>
+    <nav class="d-flex">
+        <a href="#" class="nav-link" style="color: black;">STORE</a>
+        <a href="#" class="nav-link" style="color: black;">EXPLORE</a>
+        <a href="#" class="nav-link" style="color: black;">LEARN</a>
+    </nav>
+</header>
+
+<!-- Main Section -->
+<main class="text-center mt-5" style="margin-top: 80px;">
+    <h1 class="text-white" id="typing-effect" style="font-size: 2.5rem; font-weight: bold; background-color: rgba(0, 0, 0, 0.6); display: inline-block; padding: 10px 20px; border-radius: 10px;">
+        Welcome to WalterMart
+    </h1>
+    <div class="text-white mt-4" style="text-align: center; font-size: 1.2rem; line-height: 1.8; background-color: rgba(0, 0, 0, 0.6); padding: 20px; border-radius: 10px;">
+        <div>Your one-stop destination for convenient shopping, with everything you need under one roof.</div>
+        <div>At WalterMart, discover a wide range of quality products, from groceries to household essentials.</div>
+        <div>Enjoy hassle-free shopping, exclusive deals, and exciting promos tailored just for you.</div>
+        <div>With multiple branches and online options, WalterMart brings the best shopping experience closer to home!</div>
+    </div>
+
+<!-- Button Wrapper -->
+<div class="mb-4" style="margin-top: 40px;"> <!-- Adjust the value as needed -->
+    <button class="btn btn-secondary" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
+    <button class="btn btn-light" data-toggle="modal" data-target="#signInModal">Sign In</button>
+</div>
+</main>
+
+
+
+<!-- Remaining content... -->
+</body>
+<!-- Sign In Modal -->
+<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+            <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="signInEmail" class="text-dark">Email address</label>
+                    <input type="email" class="form-control" id="signInEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="signInPassword" class="text-dark">Password</label>
+                    <input type="password" class="form-control" id="signInPassword" required>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                    <label class="form-check-label text-dark" for="rememberMe">Remember Me</label>
+                </div>
+                <a href="#" class="text-muted">Forgot Password?</a>
+            </form>
+        </div>
+        <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-dark mx-2">Sign In</button>
+        </div>
+        <div class="social-signin text-center mb-2">
+            <p class="text-dark">Or sign in with:</p>
+            <button class="btn btn-danger btn-sm mx-1">
+                <i class="fab fa-google"></i> Sign in with Google
+            </button>
+            <button class="btn btn-primary btn-sm mx-1">
+                <i class="fab fa-facebook-f"></i> Sign in with Facebook
+            </button>
+        </div>
+              
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+            <h5 class="modal-title" id="signUpModalLabel">Sign Up</h5>
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="fullName" class="text-dark">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="signUpEmail" class="text-dark">Email address</label>
+                    <input type="email" class="form-control" id="signUpEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="signUpPassword" class="text-dark">Password</label>
+                    <input type="password" class="form-control" id="signUpPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword" class="text-dark">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" required>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                    <label class="form-check-label text-dark" for="termsCheck">I agree to the Terms & Conditions</label>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-dark mx-2">Sign Up</button>
+        </div>
+        <div class="social-signup text-center mb-2">
+            <p class="text-dark">Or sign up with:</p>
+            <button class="btn btn-danger btn-sm mx-1">
+                <i class="fab fa-google"></i> Sign up with Google
+            </button>
+            <button class="btn btn-primary btn-sm mx-1">
+                <i class="fab fa-facebook-f"></i> Sign up with Facebook
+            </button>
+        </div>                
+            </div>                    
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <!-- Modal content -->
+</div>
+
+<!-- Footer -->
+<!-- Footer -->
+<footer class="bg-dark text-white py-3" style="position: relative; bottom: 0; width: 100%;">
+    <div class="container">
+        <div class="row text-center">
+            <!-- About Us Section -->
+            <div class="col-md-4 d-flex flex-column align-items-center mb-2 mb-md-0">
+                <h6 class="mb-2">ABOUT US</h6>
+                <ul class="list-unstyled mb-0">
+                    <li><a href="#" class="text-white">News & Events</a></li>
+                    <li><a href="#" class="text-white">Promos</a></li>
+                    <li><a href="#" class="text-white">Legal Notices</a></li>
+                </ul>
+            </div>
+
+            <!-- Connect with Us Section -->
+            <div class="col-md-4 d-flex flex-column align-items-center mb-2 mb-md-0">
+                <h6 class="mb-2">CONNECT WITH US</h6>
+                <ul class="list-unstyled d-flex justify-content-center mb-0">
+                    <li class="mr-3">
+                        <a href="#" class="text-white" style="font-size: 1.3rem;">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a href="#" class="text-white" style="font-size: 1.3rem;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white" style="font-size: 1.3rem;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Download the App Section -->
+            <div class="col-md-4 d-flex flex-column align-items-center">
+                <h6 class="mb-2">DOWNLOAD THE APP</h6>
+                <ul class="list-unstyled mb-0">
+                    <li><a href="#" class="text-white"><i class="fab fa-apple"></i> App Store</a></li>
+                    <li><a href="#" class="text-white"><i class="fab fa-google-play"></i> Google Play</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Additional CSS to ensure footer placement -->
+<style>
+    footer h6 {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    footer a {
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    footer i {
+        font-size: 1.3rem;
+    }
+
+    @media (max-width: 768px) {
+        footer .row {
+            flex-direction: column;
+        }
+
+        footer .col-md-4 {
+            margin-bottom: 15px;
+        }
+    }
+</style>
+
+
+
+
+        
+        
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+
+        let index = 0;
+    
+        function typeText() {
+            if (index < text.length) {
+                document.getElementById("typing-effect").innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeText, 50); // Adjust speed here (in milliseconds)
+            }
+        }
+    
+        window.onload = typeText; // Start typing effect on page load
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+    
